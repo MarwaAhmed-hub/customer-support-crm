@@ -3,6 +3,7 @@ import BuildOutlinedIcon from "@mui/icons-material/BuildOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import LabelOutlinedIcon from "@mui/icons-material/LabelOutlined";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Box, Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useAuth } from "../auth/useAuth";
@@ -66,6 +67,20 @@ export function KnowledgeBaseHomePage() {
                 <Typography variant="h6">Guides</Typography>
                 <Typography variant="body2" color="text.secondary">
                   Step-by-step walkthroughs.
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        )}
+
+        {hasPermission("knowledgebase.search") && (
+          <Card variant="outlined">
+            <CardActionArea component={Link} to="/knowledge-base/search" sx={{ height: "100%", p: 1 }}>
+              <CardContent sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 1, textAlign: "center" }}>
+                <SearchOutlinedIcon color="primary" fontSize="large" />
+                <Typography variant="h6">Search</Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Search across everything above at once.
                 </Typography>
               </CardContent>
             </CardActionArea>
