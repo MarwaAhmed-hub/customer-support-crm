@@ -1,0 +1,6 @@
+# pnpm 11 blocks dependency build scripts by default and reads this setting from here
+# (no longer from the "pnpm" field in package.json).
+# esbuild ships a platform-specific binary and needs its postinstall script to run, or Vite
+# and Vitest cannot start.
+allowBuilds:
+  esbuild: true

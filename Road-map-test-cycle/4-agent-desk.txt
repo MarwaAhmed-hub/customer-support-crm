@@ -1,0 +1,140 @@
+                 AGENT LOGIN
+                      │
+                      ▼
+              ┌───────────────┐
+              │ Story 15       │
+              │ Agent Dashboard│
+              └───────┬───────┘
+                      │
+                      ▼
+              Assigned Tickets
+                      │
+                      ▼
+              Customer Information
+                      │
+                      ▼
+                 Work on Ticket
+                      │
+          ┌───────────┼───────────┐
+          ▼           ▼           ▼
+       Story 16    Story 17    Story 18
+       Tasks &     Quick       Team
+       Reminders   Replies     Collaboration
+          │           │           │
+          ▼           ▼           ▼
+        Follow-up   Respond     Get Help
+          │           │           │
+          └───────────┼───────────┘
+                      ▼
+                Continue Ticket
+                      │
+                      ▼
+                     END
+
+
+**********************************************************************************************************
+Story 16    
+ Tasks & 
+ Reminders 
+
+                  TASK
+                   │
+        ┌──────────┴──────────┐
+        │                     │
+ From Tasks Menu         From Ticket
+        │                     │
+        ▼                     ▼
+  Related Ticket?        Ticket automatic
+     OPTIONAL
+        │
+    ┌───┴───┐
+   YES      NO
+    │        │
+    ▼        ▼
+Select     No Ticket
+Ticket
+    │        │
+    └────┬───┘
+         ▼
+      Save Task
+         │
+         ▼
+ Agent Tasks & Reminders
+         │
+         ▼
+ If linked → also visible
+ inside related Ticket
+**************************************************************
+مثال: Marwa = Agent
+
+عندنا تيكتين:
+
+Ticket #101 → مشكلة في تسجيل الدخول → اتعمله Assign لـ Marwa
+Ticket #102 → مشكلة في الفاتورة → اتعمله Assign لـ Marwa
+
+فالـ Agent Desk بتاع Marwa هيشتغل كده:
+
+Marwa Login
+    │
+    ▼
+Agent Dashboard
+    │
+    ▼
+Assigned Tickets
+    │
+    ├───────────────┐
+    ▼               ▼
+Ticket #101      Ticket #102
+    │               │
+    ▼               ▼
+Customer Info    Customer Info
+    │               │
+    ▼               ▼
+Work on Ticket   Work on Ticket
+
+Ticket #101
+    │
+    ▼
+تشوف بيانات العميل
+    │
+    ▼
+تبدأ معالجة المشكلة
+    │
+    ├── محتاجة تعمل Task؟
+    │       │
+    │       ▼
+    │   Story 16
+    │   Create Task
+    │
+    ├── محتاجة ترد على العميل؟
+    │       │
+    │       ▼
+    │   Story 17
+    │   Quick Reply
+    │
+    └── محتاجة مساعدة من الفريق؟
+            │
+            ▼
+        Story 18
+        Team Collaboration
+
+Ticket #102
+    │
+    ▼
+Customer Info
+    │
+    ▼
+تفهم مشكلة الفاتورة
+    │
+    ▼
+تحتاج ترد على العميل
+    │
+    ▼
+Quick Reply
+    │
+    ▼
+تعدل الرد لو محتاجة
+    │
+    ▼
+Send
+

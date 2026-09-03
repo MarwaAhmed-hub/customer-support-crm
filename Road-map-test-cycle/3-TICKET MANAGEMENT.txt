@@ -1,0 +1,189 @@
+╔══════════════════════════════════════════════════════════════╗
+║                      TICKET MANAGEMENT                      ║
+╚══════════════════════════════════════════════════════════════╝
+
+                         START
+                           │
+                           ▼
+                 ┌─────────────────┐
+                 │    STORY 10      │
+                 │ Categories &     │
+                 │ Priorities       │
+                 └────────┬────────┘
+                          │
+                          ▼
+                    Admin Login
+                          │
+                          ▼
+                Ticket Categories
+                          │
+                          ▼
+                  Create Categories
+                          │
+                          ▼
+                 Ticket Priorities
+                          │
+                          ▼
+                  Create Priorities
+                          │
+                          ▼
+                  Master Data Ready
+══════════════════════════════════════════════════════════════
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    STORY 11      │
+                 │ Ticket Creation  │
+                 │ & Tracking       │
+                 └────────┬────────┘
+                          │
+                          ▼
+                       New Ticket
+                          │
+                          ▼
+             Select Customer
+             Select Category
+             Select Priority
+             Enter Subject
+             Enter Description
+                          │
+                          ▼
+                         Save
+                          │
+                          ▼
+                  Ticket Created
+                          │
+                ┌─────────┴─────────┐
+                ▼                   ▼
+          Status = OPEN       Customer Interaction
+                                    Created
+                          │
+                          ▼
+                    Ticket Details
+══════════════════════════════════════════════════════════════
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    STORY 12      │
+                 │ Ticket Assignment│
+                 └────────┬────────┘
+                          │
+                          ▼
+                     Unassigned
+                          │
+                          ▼
+                   Select Agent
+                          │
+                          ▼
+                 Save Assignment
+                          │
+                          ▼
+                 Ticket → Agent
+                          │
+                   ┌──────┴──────┐
+                   ▼             ▼
+                Reassign       Unassign
+                   │             │
+                   ▼             ▼
+                Agent B       Unassigned
+                          │
+                          ▼
+══════════════════════════════════════════════════════════════
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    STORY 13      │
+                 │ Status &         │
+                 │ Escalation       │
+                 └────────┬────────┘
+                          │
+                          ▼
+                        AGENT
+                          │
+                          ▼
+                   Open Ticket
+                          │
+                          ▼
+                  Change Status
+                          │
+             ┌────────────┴────────────┐
+             ▼                         ▼
+         In Progress               Closed
+             │                         │
+             ▼                         ▼
+          Pending                  Reopen
+             │                         │
+             ▼                         ▼
+        In Progress              In Progress
+             │
+             ▼
+          Resolved
+             │
+             ▼
+           Closed
+
+──────────────────────────────────────────────────────────────
+
+                  AGENT NEEDS HELP?
+                         │
+                        YES
+                         │
+                         ▼
+                Request Escalation
+                         │
+                         ▼
+                  Enter Reason
+                         │
+                         ▼
+                     ESCALATED
+                         │
+          ┌──────────────┴──────────────┐
+          │                             │
+          │ Status unchanged            │
+          │ Assignee unchanged          │
+          │                             │
+          └──────────────┬──────────────┘
+                         ▼
+                      MANAGER
+                         │
+                         ▼
+                 Sees Escalated Ticket
+                         │
+                         ▼
+                    Reviews Ticket
+                         │
+                         ▼
+                    De-escalate
+                         │
+                         ▼
+                       NORMAL
+                         │
+                         ▼
+                   Agent Continues
+══════════════════════════════════════════════════════════════
+                         │
+                         ▼
+                 ┌─────────────────┐
+                 │    STORY 14      │
+                 │ Ticket History   │
+                 └────────┬────────┘
+                          │
+                          ▼
+                    Open Ticket
+                          │
+                          ▼
+                       History
+                          │
+            ┌─────────────┼─────────────┐
+            ▼             ▼             ▼
+         Created      Assignment    Status Change
+            │             │             │
+            └─────────────┼─────────────┘
+                          │
+                  ┌───────┴────────┐
+                  ▼                ▼
+              Escalated       De-escalated
+                  │                │
+                  └───────┬────────┘
+                          ▼
+                         END

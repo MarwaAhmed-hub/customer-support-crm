@@ -1,0 +1,46 @@
+version: 1
+project:
+  name: Customer Support CRM
+  primaryLanguage: C#
+  projectRoots:
+    - .
+tracker:
+  type: none
+naming:
+  includeTrackerId: false
+  globalSequence: true
+agents: []
+planner:
+  enabled: true
+  provider: anthropic
+  mode: auto
+  auth:
+    anthropic: subscription
+  budget:
+    maxFileReads: 15
+    maxContextBytes: 30000
+    maxDurationSeconds: 300
+  cache:
+    enabled: false
+  maxOutputTokens: 16384
+  stages:
+    scout:
+      enabled: true
+      maxFiles: 12
+      maxOutputTokens: 2048
+  tools:
+    grep: true
+    listDir: true
+    rangedRead: true
+  validation:
+    enabled: true
+    strict: false
+  runtime:
+    anthropic: agent-sdk
+  providerOptions:
+    anthropic:
+      thinking: adaptive
+      effort: medium
+      effortByPhase:
+        scout: minimal
+        draft: medium

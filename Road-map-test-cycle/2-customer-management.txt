@@ -1,0 +1,126 @@
+╔══════════════════════════════════════════════════════════════╗
+║                    CUSTOMER MANAGEMENT                      ║
+╚══════════════════════════════════════════════════════════════╝
+
+                         START
+                           │
+                           ▼
+                 ┌─────────────────┐
+                 │    STORY 07      │
+                 │ Customer Profile │
+                 └────────┬────────┘
+                          │
+                          ▼
+                       Customers
+                          │
+                          ▼
+                    New Customer
+                          │
+                          ▼
+              Enter Customer Details
+                          │
+                 ┌────────┼────────┐
+                 ▼        ▼        ▼
+               Name     Email     Phone
+                          │
+                          ▼
+                         Save
+                          │
+                          ▼
+                   Customer Created
+                          │
+                          ▼
+                    Customer Details
+                          │
+                 ┌────────┴────────┐
+                 ▼                 ▼
+               Edit              Search
+                 │                 │
+                 ▼                 ▼
+            Update Data       Find Customer
+                 │
+                 └────────┬────────┘
+                          ▼
+══════════════════════════════════════════════════════════════
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    STORY 08      │
+                 │ Interaction     │
+                 │ History         │
+                 └────────┬────────┘
+                          │
+                          ▼
+                 Open Customer
+                          │
+                          ▼
+              Interaction History
+                          │
+                   ┌──────┴──────┐
+                   ▼             ▼
+                Empty        Has Records
+                   │             │
+                   ▼             ▼
+             No interactions   View History
+                          │
+                          ▼
+              [Later: Ticket Created]
+                          │
+                          ▼
+                 Automatic Interaction
+                          │
+                          ▼
+                 Interaction History
+══════════════════════════════════════════════════════════════
+                          │
+                          ▼
+                 ┌─────────────────┐
+                 │    STORY 09      │
+                 │ Notes &          │
+                 │ Attachments      │
+                 └────────┬────────┘
+                          │
+                          ▼
+                    Customer Page
+                          │
+              ┌───────────┴───────────┐
+              ▼                       ▼
+            Notes                 Attachments
+              │                       │
+              ▼                       ▼
+          Add Note               Upload File
+              │                       │
+              ▼                       ▼
+          Edit Note               Validate
+              │                 ┌─────┴─────┐
+              ▼                 ▼           ▼
+         Delete Note          Invalid      Valid
+                                │            │
+                                ▼            ▼
+                              Error       Save File
+                                             │
+                                      ┌──────┴──────┐
+                                      ▼             ▼
+                                   Download       Delete
+                                      │             │
+                                      └──────┬──────┘
+                                             ▼
+                                            END
+
+Create Customer
+ ↓
+Open Customer
+ ↓
+Check Profile
+ ↓
+Check Interaction History
+ ↓
+Add/Edit/Delete Note
+ ↓
+Upload/Download/Delete Attachment
+ ↓
+Create Ticket later
+ ↓
+Return to Customer
+ ↓
+Verify Ticket Interaction appeared

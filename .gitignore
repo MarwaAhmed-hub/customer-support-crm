@@ -1,0 +1,44 @@
+# Managed by squad-kit — do not edit this block
+.squad/secrets.yaml
+.squad/stories/**/attachments/
+.squad/.trash/
+.squad/.last-run.json
+.squad/.last-copy-prompt.md
+.squad/runs/
+# End squad-kit block
+
+# .NET
+**/bin/
+**/obj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# React / Node
+**/node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Frontend build
+**/dist/
+
+# Uploaded files
+**/App_Data/customer-attachments/*
+**/wwwroot/uploads/*
+!**/wwwroot/uploads/logos/.gitkeep
+
+# Claude runtime
+.claude/scheduled_tasks.lock
+# Local development configuration
+**/appsettings.Development.json

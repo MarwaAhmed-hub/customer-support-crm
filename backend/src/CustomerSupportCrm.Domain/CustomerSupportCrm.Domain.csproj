@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- No package references: the domain stays persistence- and framework-agnostic. -->
+
+</Project>

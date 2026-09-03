@@ -1,0 +1,9 @@
+/* MUI's CssBaseline (see main.tsx) handles the reset; this only fixes the app to fill the viewport. */
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}

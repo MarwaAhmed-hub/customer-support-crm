@@ -1,0 +1,185 @@
+╔══════════════════════════════════════════════════════════════╗
+║              FOUNDATION & ADMINISTRATION                    ║
+╚══════════════════════════════════════════════════════════════╝
+
+                    START
+                      │
+                      ▼
+              ┌───────────────┐
+              │   STORY 01    │
+              │ Authentication│
+              └───────┬───────┘
+                      │
+                 Open CRM
+                      │
+                      ▼
+                   /login
+                      │
+              Enter Email/Password
+                      │
+             ┌────────┴────────┐
+             │                 │
+           Wrong             Correct
+             │                 │
+             ▼                 ▼
+          Error             JWT Login
+                               │
+                               ▼
+                             Home
+                               │
+                               ▼
+                            Logout
+                               │
+                               ▼
+                            /login
+                               │
+                               ▼
+══════════════════════════════════════════════════════════════
+                      │
+                      ▼
+              ┌───────────────┐
+              │   STORY 02    │
+              │     Users     │
+              └───────┬───────┘
+                      │
+                 Admin Login
+                      │
+                      ▼
+                    Users
+                      │
+          ┌───────────┼───────────┐
+          ▼           ▼           ▼
+       Create       Edit      Activate/
+        User         User     Deactivate
+          │           │           │
+          └───────────┼───────────┘
+                      │
+                      ▼
+                 User Ready
+                      │
+                      ▼
+══════════════════════════════════════════════════════════════
+                      │
+                      ▼
+              ┌─────────────────┐
+              │    STORY 03     │
+              │ Roles &         │
+              │ Permissions     │
+              └────────┬────────┘
+                       │
+                  Create/Select
+                     Role
+                       │
+                       ▼
+                 Assign Permissions
+                       │
+                       ▼
+                 Assign Role
+                    → User
+                       │
+                       ▼
+                  User Login
+                       │
+                       ▼
+                Permissions Apply
+                       │
+              ┌────────┴────────┐
+              ▼                 ▼
+          Allowed             Denied
+              │                 │
+              ▼                 ▼
+          UI / API              403
+══════════════════════════════════════════════════════════════
+                      │
+                      ▼
+              ┌─────────────────┐
+              │    STORY 04     │
+              │ Departments &   │
+              │ Branches        │
+              └────────┬────────┘
+                       │
+                       ▼
+              Create Department
+              Create Branch
+                       │
+                       ▼
+                 Active Values
+                       │
+                       ▼
+              Create/Edit User
+                       │
+                       ▼
+              Select Department
+              Select Branch
+                       │
+                       ▼
+                 User Linked
+══════════════════════════════════════════════════════════════
+                      │
+                      ▼
+              ┌─────────────────┐
+              │    STORY 05     │
+              │   Audit Logs    │
+              └────────┬────────┘
+                       │
+                       ▼
+               Perform any Write
+                       │
+                       ▼
+                 Audit Log Created
+                       │
+                       ▼
+                 Open Audit Logs
+                       │
+                       ▼
+                Search / Filter
+══════════════════════════════════════════════════════════════
+                      │
+                      ▼
+              ┌─────────────────┐
+              │    STORY 06     │
+              │ System Settings │
+              │ & Branding      │
+              └────────┬────────┘
+                       │
+                       ▼
+                System Settings
+                       │
+             ┌─────────┼─────────┐
+             ▼         ▼         ▼
+           Name      Color      Logo
+             │         │         │
+             └─────────┼─────────┘
+                       ▼
+                     Save
+                       │
+                       ▼
+                UI Branding Updated
+                       │
+                       ▼
+                      END
+
+
+Admin
+ ↓
+Login
+ ↓
+Create User
+ ↓
+Create/Assign Role
+ ↓
+Assign Permissions
+ ↓
+Assign Department/Branch
+ ↓
+Login as created User
+ ↓
+Verify permissions
+ ↓
+Perform operations
+ ↓
+Check Audit Logs
+ ↓
+Change System Branding
+ ↓
+Verify UI
